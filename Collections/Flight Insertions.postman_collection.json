@@ -1,0 +1,1354 @@
+{
+	"info": {
+		"_postman_id": "ed8b7da8-c142-49e0-a7dd-c763e5461b48",
+		"name": "Flight Insertions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30014870"
+	},
+	"item": [
+		{
+			"name": "Flight1JA-ARRIVALAlOta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:10\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"JA0001\",\r\n    \"airline\": \"Japan Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Ota\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1AL-ARRIVALChicago",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AL0001\",\r\n    \"airline\": \"American Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Chicago\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1UL-ARRIVALLosAngeles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"01:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"NK0001\",\r\n    \"airline\": \"Spirit Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Miami\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B3\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1SA-ARRIVALChangi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"01:10\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"SA0001\",\r\n    \"airline\": \"Singapore Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Changi\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1DL-ARRIVALMiami",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"01:25\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"DL0001\",\r\n    \"airline\": \"Delta Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Miami\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1BA-ARRIVALLondon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"02:55\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA0001\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": null,\r\n    \"from\": \"London\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1WS-ARRIVALQuebecCity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"03:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"WS0001\",\r\n    \"airline\": \"WestJet\",\r\n    \"to\": null,\r\n    \"from\": \"Quebec City\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2DL-ARRIVALSeattle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"06:25\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"DL0001\",\r\n    \"airline\": \"Delta Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Seattle\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2JA-ARRIVALAlChangi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"07:10\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"JA0002\",\r\n    \"airline\": \"Japan Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Changi\",\r\n    \"status\": \"CANCELLED\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2WS-ARRIVALToronto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"WS0002\",\r\n    \"airline\": \"WestJet\",\r\n    \"to\": null,\r\n    \"from\": \"Toronto\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1EK-ARRIVALAlGarhoud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"EK0001\",\r\n    \"airline\": \"Emirates\",\r\n    \"to\": null,\r\n    \"from\": \"Al Garhoud\",\r\n    \"status\": \"Arrived\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2AL-ARRIVALMiami",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AL0002\",\r\n    \"airline\": \"American Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Miami\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight1AC-ARRIVALToronto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:40\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0001\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Toronto\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2SA-ARRIVALOta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"12:10\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"SA0002\",\r\n    \"airline\": \"Singapore Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Ota\",\r\n    \"status\": \"DELAYED\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2UL-ARRIVALIqaluit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"12:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"UL0002\",\r\n    \"airline\": \"United Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Iqaluit\",\r\n    \"status\": \"DELAYED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B3\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2BA-ARRIVALParis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"12:55\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA0002\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": null,\r\n    \"from\": \"Paris\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3JA-ARRIVALAlAlGarhoud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"14:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"JA0003\",\r\n    \"airline\": \"Japan Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Al Garhoud\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2AC-ARRIVALHalifax",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"14:45\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0002\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Halifax\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3DL-ARRIVALAtlanta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"15:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"DL0003\",\r\n    \"airline\": \"Delta Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Atlanta\",\r\n    \"status\": \"ARRIVED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3AL-ARRIVALNewYorkCity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"15:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AL0003\",\r\n    \"airline\": \"American Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"New York City\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight2EK-ARRIVALHaarlemmermeer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"15:20\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"EK0002\",\r\n    \"airline\": \"Emirates\",\r\n    \"to\": null,\r\n    \"from\": \"Haarlemmermeer\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3BA-ARRIVALHillingdon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"16:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA0003\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": null,\r\n    \"from\": \"Hilingdon\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3WS-ARRIVALSaskatoon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"18:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"WS0003\",\r\n    \"airline\": \"WestJet\",\r\n    \"to\": null,\r\n    \"from\": \"Saskatoon\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3AC-ARRIVALQuebecCity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"19:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0003\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Quebec City\",\r\n    \"status\": \"DELAYED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3SA-ARRIVALBeijing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"19:20\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"SA0003\",\r\n    \"airline\": \"Singapore Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Beijing\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3UL-ARRIVALCharlottetown",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"20:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"UL0003\",\r\n    \"airline\": \"United Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Charlottetown\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B3\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4SA-ARRIVALFrankfurt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"23:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"SA0004\",\r\n    \"airline\": \"Singapore Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Beijing\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight3EK-ARRIVALChangi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"EK0003\",\r\n    \"airline\": \"Emirates\",\r\n    \"to\": null,\r\n    \"from\": \"Changi\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4AL-ARRIVALAtlanta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AL0004\",\r\n    \"airline\": \"American Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Atlanta\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4DL-ARRIVALNewYorkCity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"DL0004\",\r\n    \"airline\": \"Delta Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"New York City\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4BA-ARRIVALHaarlemmermeer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA0004\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": null,\r\n    \"from\": \"Haarlemmermeer\",\r\n    \"status\": \"DELAYED\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4AC-ARRIVALEdmonton",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"00:20\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0004\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Edmonton\",\r\n    \"status\": \"EARLY\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4JA-ARRIVALAlBeijing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"01:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"JA0004\",\r\n    \"airline\": \"Japan Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Beijing\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4WS-ARRIVALWinnipeg",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"01:35\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"WS0004\",\r\n    \"airline\": \"WestJet\",\r\n    \"to\": null,\r\n    \"from\": \"Winnipeg\",\r\n    \"status\": \"DELAYED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4UL-ARRIVALYellowknife",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"02:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"UL0004\",\r\n    \"airline\": \"United Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Yellowknife\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B3\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight4EK-ARRIVALOta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"04:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"EK0004\",\r\n    \"airline\": \"Emirates\",\r\n    \"to\": null,\r\n    \"from\": \"Ota\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5BA-ARRIVALMadrid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"04:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA0005\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": null,\r\n    \"from\": \"Madrid\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5SA-ARRIVALAlGarhoud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"04:10\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"SA0005\",\r\n    \"airline\": \"Singapore Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Al Garhoud\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5DL-ARRIVALChicago",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"07:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"DL0005\",\r\n    \"airline\": \"Delta Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Chicago\",\r\n    \"status\": \"CANCELLED\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5AC-ARRIVALWhitehorse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"07:30\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0005\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Whitehorse\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5AL-ARRIVALSeattle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"09:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AL0005\",\r\n    \"airline\": \"American Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Seattle\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5WS-ARRIVALFredericton",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"09:55\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"WS0005\",\r\n    \"airline\": \"WestJet\",\r\n    \"to\": null,\r\n    \"from\": \"Fredericton\",\r\n    \"status\": \"EARLY\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight6AC-ARRIVALWabush",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:00\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0006\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Wabush\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight6BA-ARRIVALFrankfurt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA0006\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": null,\r\n    \"from\": \"Frankfurt\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5UL-ARRIVALChicago",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"UL0005\",\r\n    \"airline\": \"United Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Chicago\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B3\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5EK-ARRIVALBeijing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:10\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"EK0005\",\r\n    \"airline\": \"Emirates\",\r\n    \"to\": null,\r\n    \"from\": \"Beijing\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight5JA-ARRIVALAlOta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"10:15\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"JA0005\",\r\n    \"airline\": \"Japan Airlines\",\r\n    \"to\": null,\r\n    \"from\": \"Ota\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"South\",\r\n    \"gate\": \"D2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"D\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight7AC-ARRIVALVancouver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arrivalDate\": \"Dec 22\",\r\n    \"departureDate\": \"\",\r\n    \"arrivalTime\": \"13:05\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"AC0007\",\r\n    \"airline\": \"Air Canada\",\r\n    \"to\": null,\r\n    \"from\": \"Vancouver\",\r\n    \"status\": \"ON TIME\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"flight"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
