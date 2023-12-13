@@ -4200,6 +4200,118 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Flight1BA-DEPARTURELondon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"01:55\",\r\n    \"arrivalTime\": \"\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"BA1000\",\r\n    \"airline\": \"British Airways\",\r\n    \"to\": \"London\",\r\n    \"from\": \"\",\r\n    \"status\": \"DEPARTED\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C1\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/flight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flight1WS-DEPARTUREQuebecCity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"03:10\",\r\n    \"arrivalTime\": \"\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"WS1000\",\r\n    \"airline\": \"WestJet\",\r\n    \"to\": \"Quebec City\",\r\n    \"from\": \"\",\r\n    \"status\": \"DEPARTED\",\r\n    \"terminal\": \"Main\",\r\n    \"gate\": \"A2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/flight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flight1EK-DEPARTUREAlGarhoud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"12:10\",\r\n    \"arrivalTime\": \"\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"EK1000\",\r\n    \"airline\": \"Emirates\",\r\n    \"to\": \"Al Garhoud\",\r\n    \"from\": \"\",\r\n    \"status\": \"LAST CALL\",\r\n    \"terminal\": \"East\",\r\n    \"gate\": \"C2\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/flight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flight1UL-DEPARTURELosAngeles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"arrivalDate\": \"Dec 21\",\r\n    \"departureDate\": \"01:25\",\r\n    \"arrivalTime\": \"\",\r\n    \"departureTime\": \"\",\r\n    \"flightNumber\": \"NK1000\",\r\n    \"airline\": \"Spirit Airlines\",\r\n    \"to\": \"Miami\",\r\n    \"from\": \"\",\r\n    \"status\": \"LAST CALL\",\r\n    \"terminal\": \"West\",\r\n    \"gate\": \"B3\",\r\n    \"checkInCounter\": null,\r\n    \"carousel\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/flight",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
