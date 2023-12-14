@@ -1,8 +1,10 @@
 package com.keyin.airport;
 
 import com.keyin.city.City;
+import com.keyin.flight.Flight;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Airport {
@@ -10,11 +12,12 @@ public class Airport {
     @SequenceGenerator(name = "airport_sequence", sequenceName = "airport_sequence", allocationSize = 1, initialValue = 1)
     @GeneratedValue(generator = "airport_sequence")
     private long id;
-    private String name;
     private String code;
+    private String name;
+    private String city;
 
-    @OneToOne
-    private City city;
+    @OneToMany
+    private List<Flight> flights;
 
     public long getId() {
         return id;
@@ -38,5 +41,13 @@ public class Airport {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = String.valueOf(city);
     }
 }

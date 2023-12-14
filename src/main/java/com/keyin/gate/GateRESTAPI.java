@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "gate", path = "gate")
-public interface GateRESTAPI extends JpaRepository<Gate, String> {
+public interface GateRESTAPI extends JpaRepository<Gate, Long> {
     public List<Gate> findByGateNumber(@RequestParam String gateNumber);
 }
