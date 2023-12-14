@@ -1,11 +1,8 @@
 package com.keyin.flight;
-
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.keyin.airport.Airport;
-
 import javax.persistence.*;
-import java.sql.Time;
-import java.util.Calendar;
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Entity
 public class Flight {
@@ -15,18 +12,21 @@ public class Flight {
     private long id;
     private String flightNumber;
     private String airline;
-    @OneToOne
-    private Airport departure;
-    @OneToOne
-    private Airport arrival;
-    private Calendar arrivalDateAndTime;
-    private Calendar departureDateAndTime;
+    @ManyToOne
+    private Airport departureAirport;
+    @ManyToOne
+    private Airport arrivalAirport;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
+    private Timestamp arrivalDateAndTime;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
+    private Timestamp departureDateAndTime;
     private String terminal;
     private String gate;
     private String status;
     private String checkInCounter;
     private String carousel;
+
 
     public long getId() {
         return id;
@@ -53,34 +53,34 @@ public class Flight {
     }
 
     public Airport getDeparture() {
-        return departure;
+        return departureAirport;
     }
 
     public void setDeparture(Airport departure) {
-        this.departure = departure;
+        this.departureAirport = departure;
     }
 
     public Airport getArrival() {
-        return arrival;
+        return arrivalAirport;
     }
 
     public void setArrival(Airport arrival) {
-        this.arrival = arrival;
+        this.arrivalAirport = arrival;
     }
 
-    public Calendar getArrivalDateAndTime() {
+    public Timestamp getArrivalDateAndTime() {
         return arrivalDateAndTime;
     }
 
-    public void setArrivalDateAndTime(Calendar arrivalDateAndTime) {
+    public void setArrivalDateAndTime(Timestamp arrivalDateAndTime) {
         this.arrivalDateAndTime = arrivalDateAndTime;
     }
 
-    public Calendar getDepartureDateAndTime() {
+    public Timestamp getDepartureDateAndTime() {
         return departureDateAndTime;
     }
 
-    public void setDepartureDateAndTime(Calendar departureDateAndTime) {
+    public void setDepartureDateAndTime(Timestamp departureDateAndTime) {
         this.departureDateAndTime = departureDateAndTime;
     }
 
