@@ -14,7 +14,8 @@ public class Airport {
     private long id;
     private String code;
     private String name;
-    private String city;
+    @OneToOne
+    private City city;
 
     @OneToMany
     private List<Flight> flights;
@@ -41,13 +42,5 @@ public class Airport {
 
     public void setCode(String code) {
         this.code = code;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(City city) {
-        this.city = String.valueOf(city);
     }
 }
