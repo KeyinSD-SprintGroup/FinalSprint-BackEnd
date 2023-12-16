@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "9149794f-398a-43ab-b95a-7af4f317ce99",
+		"_postman_id": "c2d16959-d7a2-4c8b-9da3-3266a1c3622c",
 		"name": "s4_final_sprint",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30744089"
+		"_exporter_id": "30014870"
 	},
 	"item": [
 		{
@@ -6866,6 +6866,941 @@
 							"port": "8080",
 							"path": [
 								"passenger"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Airport-FK-Insertions",
+			"item": [
+				{
+					"name": "Airport1City1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/1"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/1/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"1",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport2City2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/2"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/2/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"2",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport3City3",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/3"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/3/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"3",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport4City4",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/4"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/4/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"4",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport5City5",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/5"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/5/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"5",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport6City6",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/6"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/6/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"6",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport7City7",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/7"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/7/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"7",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport8City8",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/8"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/8/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"8",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport9City9",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/9"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/9/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"9",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport10City10",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/10"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/10/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"10",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport11City11",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/11"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/11/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"11",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport12City12",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/12"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/12/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"12",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport13City13",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/13"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/13/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"13",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport14City14",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/14"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/14/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"14",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport15City15",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/15"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/15/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"15",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport16City16",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/16"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/16/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"16",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport17City17",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/17"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/17/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"17",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport18City18",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/18"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/18/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"18",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport19City19",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/19"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/19/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"19",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport20City20",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/20"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/20/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"20",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport21City21",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/21"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/21/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"21",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport22City22",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/22"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/22/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"22",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport23City23",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/23"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/23/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"23",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport24City24",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/24"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/24/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"24",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport25City25",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/25"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/25/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"25",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport26City26",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/26"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/26/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"26",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport27City27",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/27"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/27/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"27",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport28City28",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/28"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/28/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"28",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport29City29",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/29"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/29/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"29",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airport30City30",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/uri-list",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/city/30"
+						},
+						"url": {
+							"raw": "http://localhost:8080/airport/30/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airport",
+								"30",
+								"city"
 							]
 						}
 					},
