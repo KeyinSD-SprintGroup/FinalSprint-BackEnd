@@ -1,5 +1,6 @@
 package com.keyin.flight;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.keyin.airline.Airline;
 import com.keyin.airport.Airport;
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -11,22 +12,24 @@ public class Flight {
     @GeneratedValue(generator = "flight_sequence")
     private long id;
     private String flightNumber;
-    private String airline;
     @ManyToOne
+    private Airline airline;
+    @ManyToOne
+    @JoinColumn(name = "departure_airport_id")
     private Airport departureAirport;
     @ManyToOne
+    @JoinColumn(name = "arrival_airport_id")
     private Airport arrivalAirport;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp arrivalDateAndTime;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp departureDateAndTime;
     private String terminal;
     private String gate;
     private String status;
     private String checkInCounter;
     private String carousel;
-
 
     public long getId() {
         return id;
@@ -44,28 +47,28 @@ public class Flight {
         this.flightNumber = flightNumber;
     }
 
-    public String getAirline() {
+    public Airline getAirline() {
         return airline;
     }
 
-    public void setAirline(String airline) {
+    public void setAirline(Airline airline) {
         this.airline = airline;
     }
 
-    public Airport getDeparture() {
+    public Airport getDepartureAirport() {
         return departureAirport;
     }
 
-    public void setDeparture(Airport departure) {
-        this.departureAirport = departure;
+    public void setDepartureAirport(Airport departureAirport) {
+        this.departureAirport = departureAirport;
     }
 
-    public Airport getArrival() {
+    public Airport getArrivalAirport() {
         return arrivalAirport;
     }
 
-    public void setArrival(Airport arrival) {
-        this.arrivalAirport = arrival;
+    public void setArrivalAirport(Airport arrivalAirport) {
+        this.arrivalAirport = arrivalAirport;
     }
 
     public Timestamp getArrivalDateAndTime() {

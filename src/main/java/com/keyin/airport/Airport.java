@@ -14,11 +14,14 @@ public class Airport {
     private long id;
     private String code;
     private String name;
-    @OneToOne
+    @ManyToOne
     private City city;
 
-    @OneToMany
-    private List<Flight> flights;
+    @OneToMany(mappedBy = "arrivalAirport", fetch = FetchType.EAGER)
+    private List<Flight> arrivalList;
+
+    @OneToMany(mappedBy = "departureAirport", fetch = FetchType.EAGER)
+    private List<Flight> departureList;
 
     public long getId() {
         return id;

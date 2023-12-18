@@ -17,7 +17,8 @@ public class City {
     private int population;
 
     @OneToMany
-    private List<Airport> airports;
+    @JoinColumn(name="city_id")
+    private List<Airport> airportList;
 
     public long getId() {
         return id;

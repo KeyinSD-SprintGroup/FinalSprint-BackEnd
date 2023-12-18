@@ -1,6 +1,8 @@
 package com.keyin.airline;
 
+import com.keyin.aircraft.Aircraft;
 import com.keyin.airport.Airport;
+import com.keyin.flight.Flight;
 import com.keyin.gate.Gate;
 
 import javax.persistence.*;
@@ -13,12 +15,11 @@ public class Airline {
     @GeneratedValue(generator = "airline_sequence")
     private long id;
     private String name;
-
     @OneToMany
-    private List<Airport> airports;
-
+    private List<Aircraft> aircraftList;
     @OneToMany
-    private List<Gate> gates;
+    @JoinColumn(name = "airline_id")
+    private List<Flight> flightList;
 
     public long getId() {
         return id;
