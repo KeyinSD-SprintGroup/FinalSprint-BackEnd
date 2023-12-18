@@ -15,7 +15,7 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         // Allow requests from your React app's origin (http://localhost:3000)
-        config.addAllowedOrigin("https://your-react-app-domain.com");
+        config.addAllowedOrigin("http://localhost:3000");
 
         // Allow all HTTP methods (GET, POST, PUT, DELETE, etc.).
         config.addAllowedMethod("*");
