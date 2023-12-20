@@ -1,5 +1,6 @@
 package com.keyin.gate;
 
+import com.keyin.aircraft.Aircraft;
 import com.keyin.airport.Airport;
 import com.keyin.flight.Flight;
 
@@ -17,8 +18,8 @@ public class Gate {
     @JoinColumn(name ="airport_id")
     private Airport airport;
 
-    @OneToMany(mappedBy = "gate")
-    private List<Flight> flightList;
+    @ManyToMany
+    private List<Aircraft> AircraftList;
 
     public Long getId() {
         return id;
@@ -34,5 +35,21 @@ public class Gate {
 
     public void setGateNumber(String gateNumber) {
         this.gateNumber = gateNumber;
+    }
+
+    public Airport getAirport() {
+        return airport;
+    }
+
+    public void setAirport(Airport airport) {
+        this.airport = airport;
+    }
+
+    public List<Aircraft> getAircraftList() {
+        return AircraftList;
+    }
+
+    public void setAircraftList(List<Aircraft> aircraftList) {
+        AircraftList = aircraftList;
     }
 }

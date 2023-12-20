@@ -1,7 +1,8 @@
 package com.keyin.aircraft;
 
 import com.keyin.airline.Airline;
-import com.keyin.airport.Airport;
+import com.keyin.flight.Flight;
+import com.keyin.gate.Gate;
 import com.keyin.passenger.Passenger;
 
 import javax.persistence.*;
@@ -19,10 +20,10 @@ public class Aircraft {
     @JoinColumn(name = "airline_id")
     private Airline airline;
     private int numberOfPassengers;
-
+    @OneToOne
+    private Flight flight;
     @ManyToMany
-    private List<Airport> airportList;
-
+    private List<Gate> gateList;
     @ManyToMany
     private List<Passenger> passengerList;
 
@@ -50,11 +51,11 @@ public class Aircraft {
         this.tailNumber = tailNumber;
     }
 
-    public Airline getAirlineName() {
+    public Airline getAirline() {
         return airline;
     }
 
-    public void setAirlineName(Airline airline) {
+    public void setAirline(Airline airline) {
         this.airline = airline;
     }
 
@@ -64,5 +65,29 @@ public class Aircraft {
 
     public void setNumberOfPassengers(int numberOfPassengers) {
         this.numberOfPassengers = numberOfPassengers;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
+    }
+
+    public List<Gate> getGateList() {
+        return gateList;
+    }
+
+    public void setGateList(List<Gate> gateList) {
+        this.gateList = gateList;
+    }
+
+    public List<Passenger> getPassengerList() {
+        return passengerList;
+    }
+
+    public void setPassengerList(List<Passenger> passengerList) {
+        this.passengerList = passengerList;
     }
 }

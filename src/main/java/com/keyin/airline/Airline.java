@@ -15,6 +15,7 @@ public class Airline {
     @GeneratedValue(generator = "airline_sequence")
     private long id;
     private String name;
+    private String code;
     @OneToMany(mappedBy = "airline")
     private List<Aircraft> aircraftList;
     @OneToMany(mappedBy = "airline")
@@ -34,5 +35,29 @@ public class Airline {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public List<Aircraft> getAircraftList() {
+        return aircraftList;
+    }
+
+    public void setAircraftList(List<Aircraft> aircraftList) {
+        this.aircraftList = aircraftList;
+    }
+
+    public List<Flight> getFlightList() {
+        return flightList;
+    }
+
+    public void setFlightList(List<Flight> flightList) {
+        this.flightList = flightList;
     }
 }

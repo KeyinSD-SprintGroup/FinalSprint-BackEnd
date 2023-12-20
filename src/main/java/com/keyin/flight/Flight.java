@@ -27,9 +27,7 @@ public class Flight {
     private Timestamp arrivalDateAndTime;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp departureDateAndTime;
-    @ManyToOne
-    @JoinColumn(name = "gate_id")
-    private Gate gate;
+
     private String status;
 
     public long getId() {
@@ -88,14 +86,6 @@ public class Flight {
         this.departureDateAndTime = departureDateAndTime;
     }
 
-    public Gate getGate() {
-        return gate;
-    }
-
-    public void setGate(Gate gate) {
-        this.gate = gate;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -103,6 +93,4 @@ public class Flight {
     public void setStatus(String status) {
         this.status = status;
     }
-
-
 }
