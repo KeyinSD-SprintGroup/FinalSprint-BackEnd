@@ -18,7 +18,7 @@ public class Passenger {
 
     @OneToOne
     private City city;
-    @OneToMany
+    @ManyToMany
     private List<Aircraft> aircraft;
 
     public long getId() {

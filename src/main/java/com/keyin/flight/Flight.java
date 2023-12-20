@@ -25,16 +25,12 @@ public class Flight {
     private Airport arrivalAirport;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp arrivalDateAndTime;
-
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp departureDateAndTime;
-    private String terminal;
     @ManyToOne
     @JoinColumn(name = "gate_id")
     private Gate gate;
     private String status;
-    private String checkInCounter;
-    private String carousel;
 
     public long getId() {
         return id;
@@ -92,14 +88,6 @@ public class Flight {
         this.departureDateAndTime = departureDateAndTime;
     }
 
-    public String getTerminal() {
-        return terminal;
-    }
-
-    public void setTerminal(String terminal) {
-        this.terminal = terminal;
-    }
-
     public Gate getGate() {
         return gate;
     }
@@ -116,19 +104,5 @@ public class Flight {
         this.status = status;
     }
 
-    public String getCheckInCounter() {
-        return checkInCounter;
-    }
 
-    public void setCheckInCounter(String checkInCounter) {
-        this.checkInCounter = checkInCounter;
-    }
-
-    public String getCarousel() {
-        return carousel;
-    }
-
-    public void setCarousel(String carousel) {
-        this.carousel = carousel;
-    }
 }

@@ -9,7 +9,8 @@ import java.util.List;
 @Entity
 public class Gate {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(name = "gate_sequence", sequenceName = "gate_sequence", allocationSize = 1, initialValue = 1)
+    @GeneratedValue(generator = "gate_sequence")
     private Long id;
     private String gateNumber;
     @ManyToOne
