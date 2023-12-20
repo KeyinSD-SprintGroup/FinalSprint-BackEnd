@@ -1,9 +1,10 @@
 package com.keyin.gate;
 
 import com.keyin.airport.Airport;
+import com.keyin.flight.Flight;
 
 import javax.persistence.*;
-import java.awt.*;
+import java.util.List;
 
 @Entity
 public class Gate {
@@ -15,6 +16,8 @@ public class Gate {
     @JoinColumn(name ="airport_id")
     private Airport airport;
 
+    @OneToMany(mappedBy = "gate")
+    private List<Flight> flightList;
 
     public Long getId() {
         return id;

@@ -1,5 +1,6 @@
 package com.keyin.aircraft;
 
+import com.keyin.airline.Airline;
 import com.keyin.airport.Airport;
 import com.keyin.passenger.Passenger;
 
@@ -14,14 +15,16 @@ public class Aircraft {
     private long id;
     private String type;
     private String tailNumber;
-    private String airlineName;
+    @ManyToOne
+    @JoinColumn(name = "airline_id")
+    private Airline airline;
     private int numberOfPassengers;
 
     @ManyToMany
-    private List<Airport> airport;
+    private List<Airport> airportList;
 
     @ManyToMany
-    private List<Passenger> passenger;
+    private List<Passenger> passengerList;
 
     public long getId() {
         return id;
@@ -47,12 +50,12 @@ public class Aircraft {
         this.tailNumber = tailNumber;
     }
 
-    public String getAirlineName() {
-        return airlineName;
+    public Airline getAirlineName() {
+        return airline;
     }
 
-    public void setAirlineName(String airlineName) {
-        this.airlineName = airlineName;
+    public void setAirlineName(Airline airline) {
+        this.airline = airline;
     }
 
     public int getNumberOfPassengers() {

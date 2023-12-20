@@ -2,6 +2,8 @@ package com.keyin.flight;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.keyin.airline.Airline;
 import com.keyin.airport.Airport;
+import com.keyin.gate.Gate;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 
@@ -13,6 +15,7 @@ public class Flight {
     private long id;
     private String flightNumber;
     @ManyToOne
+    @JoinColumn(name = "airline_id")
     private Airline airline;
     @ManyToOne
     @JoinColumn(name = "departure_airport_id")
@@ -26,7 +29,9 @@ public class Flight {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp departureDateAndTime;
     private String terminal;
-    private String gate;
+    @ManyToOne
+    @JoinColumn(name = "gate_id")
+    private Gate gate;
     private String status;
     private String checkInCounter;
     private String carousel;
@@ -95,11 +100,11 @@ public class Flight {
         this.terminal = terminal;
     }
 
-    public String getGate() {
+    public Gate getGate() {
         return gate;
     }
 
-    public void setGate(String gate) {
+    public void setGate(Gate gate) {
         this.gate = gate;
     }
 

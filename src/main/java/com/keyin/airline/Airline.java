@@ -15,10 +15,9 @@ public class Airline {
     @GeneratedValue(generator = "airline_sequence")
     private long id;
     private String name;
-    @OneToMany
+    @OneToMany(mappedBy = "airline")
     private List<Aircraft> aircraftList;
-    @OneToMany
-    @JoinColumn(name = "airline_id")
+    @OneToMany(mappedBy = "airline")
     private List<Flight> flightList;
 
     public long getId() {
