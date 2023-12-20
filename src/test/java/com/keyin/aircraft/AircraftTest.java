@@ -75,3 +75,5 @@ class AircraftTest {
         assertEquals(200, aircraft.getNumberOfPassengers());
     }
 }
+
+// Testing actions
