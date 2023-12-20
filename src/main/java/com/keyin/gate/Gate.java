@@ -1,17 +1,25 @@
 package com.keyin.gate;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.awt.*;
+import com.keyin.aircraft.Aircraft;
+import com.keyin.airport.Airport;
+import com.keyin.flight.Flight;
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Gate {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(name = "gate_sequence", sequenceName = "gate_sequence", allocationSize = 1, initialValue = 1)
+    @GeneratedValue(generator = "gate_sequence")
     private Long id;
     private String gateNumber;
+    @ManyToOne
+    @JoinColumn(name ="airport_id")
+    private Airport airport;
+
+    @ManyToMany
+    private List<Aircraft> AircraftList;
 
     public Long getId() {
         return id;
@@ -27,5 +35,21 @@ public class Gate {
 
     public void setGateNumber(String gateNumber) {
         this.gateNumber = gateNumber;
+    }
+
+    public Airport getAirport() {
+        return airport;
+    }
+
+    public void setAirport(Airport airport) {
+        this.airport = airport;
+    }
+
+    public List<Aircraft> getAircraftList() {
+        return AircraftList;
+    }
+
+    public void setAircraftList(List<Aircraft> aircraftList) {
+        AircraftList = aircraftList;
     }
 }

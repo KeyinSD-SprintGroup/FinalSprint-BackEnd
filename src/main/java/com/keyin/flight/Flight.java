@@ -2,6 +2,8 @@ package com.keyin.flight;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.keyin.airline.Airline;
 import com.keyin.airport.Airport;
+import com.keyin.gate.Gate;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 
@@ -13,6 +15,7 @@ public class Flight {
     private long id;
     private String flightNumber;
     @ManyToOne
+    @JoinColumn(name = "airline_id")
     private Airline airline;
     @ManyToOne
     @JoinColumn(name = "departure_airport_id")
@@ -22,14 +25,10 @@ public class Flight {
     private Airport arrivalAirport;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp arrivalDateAndTime;
-
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp departureDateAndTime;
-    private String terminal;
-    private String gate;
+
     private String status;
-    private String checkInCounter;
-    private String carousel;
 
     public long getId() {
         return id;
@@ -87,43 +86,11 @@ public class Flight {
         this.departureDateAndTime = departureDateAndTime;
     }
 
-    public String getTerminal() {
-        return terminal;
-    }
-
-    public void setTerminal(String terminal) {
-        this.terminal = terminal;
-    }
-
-    public String getGate() {
-        return gate;
-    }
-
-    public void setGate(String gate) {
-        this.gate = gate;
-    }
-
     public String getStatus() {
         return status;
     }
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getCheckInCounter() {
-        return checkInCounter;
-    }
-
-    public void setCheckInCounter(String checkInCounter) {
-        this.checkInCounter = checkInCounter;
-    }
-
-    public String getCarousel() {
-        return carousel;
-    }
-
-    public void setCarousel(String carousel) {
-        this.carousel = carousel;
     }
 }

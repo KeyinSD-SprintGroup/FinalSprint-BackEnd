@@ -47,19 +47,19 @@ class AircraftTest {
         assertEquals("ABC123", aircraft.getTailNumber());
     }
 
-    @Test
-    void getAirlineName() {
-        Aircraft aircraft = new Aircraft();
-        aircraft.setAirlineName("Delta Airlines");
-        assertEquals("Delta Airlines", aircraft.getAirlineName());
-    }
-
-    @Test
-    void setAirlineName() {
-        Aircraft aircraft = new Aircraft();
-        aircraft.setAirlineName("Delta Airlines");
-        assertEquals("Delta Airlines", aircraft.getAirlineName());
-    }
+//    @Test
+//    void getAirlineName() {
+//        Aircraft aircraft = new Aircraft();
+//        aircraft.setAirlineName("Delta Airlines");
+//        assertEquals("Delta Airlines", aircraft.getAirlineName());
+//    }
+//
+//    @Test
+//    void setAirlineName() {
+//        Aircraft aircraft = new Aircraft();
+//        aircraft.setAirlineName("Delta Airlines");
+//        assertEquals("Delta Airlines", aircraft.getAirlineName());
+//    }
 
     @Test
     void getNumberOfPassengers() {

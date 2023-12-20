@@ -59,4 +59,12 @@ public class City {
     public void setPopulation(int population) {
         this.population = population;
     }
+
+    public List<Airport> getAirportList() {
+        return airportList;
+    }
+
+    public void setAirportList(List<Airport> airportList) {
+        this.airportList = airportList;
+    }
 }

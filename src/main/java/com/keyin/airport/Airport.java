@@ -2,6 +2,9 @@ package com.keyin.airport;
 
 import com.keyin.city.City;
 import com.keyin.flight.Flight;
+import com.keyin.gate.Gate;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.List;
@@ -17,11 +20,17 @@ public class Airport {
     @ManyToOne
     private City city;
 
-    @OneToMany(mappedBy = "arrivalAirport", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "arrivalAirport")
+//    @Fetch(FetchMode.SUBSELECT)
     private List<Flight> arrivalList;
 
-    @OneToMany(mappedBy = "departureAirport", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "departureAirport")
+//    @Fetch(FetchMode.SUBSELECT)
     private List<Flight> departureList;
+
+    @OneToMany(mappedBy = "airport")
+//    @Fetch(FetchMode.SUBSELECT)
+    private List<Gate> gateList;
 
     public long getId() {
         return id;
@@ -29,6 +38,14 @@ public class Airport {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getName() {
@@ -39,11 +56,35 @@ public class Airport {
         this.name = name;
     }
 
-    public String getCode() {
-        return code;
+    public City getCity() {
+        return city;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public List<Flight> getArrivalList() {
+        return arrivalList;
+    }
+
+    public void setArrivalList(List<Flight> arrivalList) {
+        this.arrivalList = arrivalList;
+    }
+
+    public List<Flight> getDepartureList() {
+        return departureList;
+    }
+
+    public void setDepartureList(List<Flight> departureList) {
+        this.departureList = departureList;
+    }
+
+    public List<Gate> getGateList() {
+        return gateList;
+    }
+
+    public void setGateList(List<Gate> gateList) {
+        this.gateList = gateList;
     }
 }

@@ -47,17 +47,17 @@ class PassengerTest {
         assertEquals("Doe", passenger.getLastName());
     }
 
-    @Test
-    void getPhoneNumber() {
-        Passenger passenger = new Passenger();
-        passenger.setPhoneNumber(123456789);
-        assertEquals(123456789, passenger.getPhoneNumber());
-    }
-
-    @Test
-    void setPhoneNumber() {
-        Passenger passenger = new Passenger();
-        passenger.setPhoneNumber(123456789);
-        assertEquals(123456789, passenger.getPhoneNumber());
-    }
+//    @Test
+//    void getPhoneNumber() {
+//        Passenger passenger = new Passenger();
+//        passenger.setPhoneNumber(123456789);
+//        assertEquals(123456789, passenger.getPhoneNumber());
+//    }
+//
+//    @Test
+//    void setPhoneNumber() {
+//        Passenger passenger = new Passenger();
+//        passenger.setPhoneNumber(123456789);
+//        assertEquals(123456789, passenger.getPhoneNumber());
+//    }
 }

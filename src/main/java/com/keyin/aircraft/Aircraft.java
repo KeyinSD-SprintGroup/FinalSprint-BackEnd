@@ -1,6 +1,8 @@
 package com.keyin.aircraft;
 
-import com.keyin.airport.Airport;
+import com.keyin.airline.Airline;
+import com.keyin.flight.Flight;
+import com.keyin.gate.Gate;
 import com.keyin.passenger.Passenger;
 
 import javax.persistence.*;
@@ -14,14 +16,16 @@ public class Aircraft {
     private long id;
     private String type;
     private String tailNumber;
-    private String airlineName;
+    @ManyToOne
+    @JoinColumn(name = "airline_id")
+    private Airline airline;
     private int numberOfPassengers;
-
+    @OneToOne
+    private Flight flight;
     @ManyToMany
-    private List<Airport> airport;
-
+    private List<Gate> gateList;
     @ManyToMany
-    private List<Passenger> passenger;
+    private List<Passenger> passengerList;
 
     public long getId() {
         return id;
@@ -47,12 +51,12 @@ public class Aircraft {
         this.tailNumber = tailNumber;
     }
 
-    public String getAirlineName() {
-        return airlineName;
+    public Airline getAirline() {
+        return airline;
     }
 
-    public void setAirlineName(String airlineName) {
-        this.airlineName = airlineName;
+    public void setAirline(Airline airline) {
+        this.airline = airline;
     }
 
     public int getNumberOfPassengers() {
@@ -61,5 +65,29 @@ public class Aircraft {
 
     public void setNumberOfPassengers(int numberOfPassengers) {
         this.numberOfPassengers = numberOfPassengers;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
+    }
+
+    public List<Gate> getGateList() {
+        return gateList;
+    }
+
+    public void setGateList(List<Gate> gateList) {
+        this.gateList = gateList;
+    }
+
+    public List<Passenger> getPassengerList() {
+        return passengerList;
+    }
+
+    public void setPassengerList(List<Passenger> passengerList) {
+        this.passengerList = passengerList;
     }
 }
