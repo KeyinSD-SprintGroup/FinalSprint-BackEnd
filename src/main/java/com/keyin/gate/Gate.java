@@ -1,9 +1,8 @@
 package com.keyin.gate;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.keyin.airport.Airport;
+
+import javax.persistence.*;
 import java.awt.*;
 
 @Entity
@@ -12,6 +11,10 @@ public class Gate {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String gateNumber;
+    @ManyToOne
+    @JoinColumn(name ="airport_id")
+    private Airport airport;
+
 
     public Long getId() {
         return id;

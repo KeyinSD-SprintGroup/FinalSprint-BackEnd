@@ -2,6 +2,9 @@ package com.keyin.airport;
 
 import com.keyin.city.City;
 import com.keyin.flight.Flight;
+import com.keyin.gate.Gate;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.List;
@@ -17,11 +20,17 @@ public class Airport {
     @ManyToOne
     private City city;
 
-    @OneToMany(mappedBy = "arrivalAirport", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "arrivalAirport")
+    @Fetch(FetchMode.SUBSELECT)
     private List<Flight> arrivalList;
 
-    @OneToMany(mappedBy = "departureAirport", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "departureAirport")
+    @Fetch(FetchMode.SUBSELECT)
     private List<Flight> departureList;
+
+    @OneToMany(mappedBy = "airport")
+    @Fetch(FetchMode.SUBSELECT)
+    private List<Gate> gateList;
 
     public long getId() {
         return id;
