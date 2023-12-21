@@ -18,8 +18,6 @@ public class Airline {
     private String code;
     @OneToMany(mappedBy = "airline")
     private List<Aircraft> aircraftList;
-    @OneToMany(mappedBy = "airline")
-    private List<Flight> flightList;
 
     public long getId() {
         return id;
@@ -51,13 +49,5 @@ public class Airline {
 
     public void setAircraftList(List<Aircraft> aircraftList) {
         this.aircraftList = aircraftList;
-    }
-
-    public List<Flight> getFlightList() {
-        return flightList;
-    }
-
-    public void setFlightList(List<Flight> flightList) {
-        this.flightList = flightList;
     }
 }

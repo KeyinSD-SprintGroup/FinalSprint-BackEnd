@@ -18,18 +18,16 @@ public class Airport {
     private String code;
     private String name;
     @ManyToOne
+    @JoinColumn(name = "city_id")
     private City city;
 
     @OneToMany(mappedBy = "arrivalAirport")
-//    @Fetch(FetchMode.SUBSELECT)
     private List<Flight> arrivalList;
 
     @OneToMany(mappedBy = "departureAirport")
-//    @Fetch(FetchMode.SUBSELECT)
     private List<Flight> departureList;
 
     @OneToMany(mappedBy = "airport")
-//    @Fetch(FetchMode.SUBSELECT)
     private List<Gate> gateList;
 
     public long getId() {

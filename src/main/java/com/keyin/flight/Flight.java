@@ -1,5 +1,6 @@
 package com.keyin.flight;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.keyin.aircraft.Aircraft;
 import com.keyin.airline.Airline;
 import com.keyin.airport.Airport;
 import com.keyin.gate.Gate;
@@ -18,6 +19,9 @@ public class Flight {
     @JoinColumn(name = "airline_id")
     private Airline airline;
     @ManyToOne
+    @JoinColumn(name = "aircraft_id")
+    private Aircraft aircraft;
+    @ManyToOne
     @JoinColumn(name = "departure_airport_id")
     private Airport departureAirport;
     @ManyToOne
@@ -27,7 +31,6 @@ public class Flight {
     private Timestamp arrivalDateAndTime;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'", timezone = "UTC")
     private Timestamp departureDateAndTime;
-
     private String status;
 
     public long getId() {
@@ -52,6 +55,14 @@ public class Flight {
 
     public void setAirline(Airline airline) {
         this.airline = airline;
+    }
+
+    public Aircraft getAircraft() {
+        return aircraft;
+    }
+
+    public void setAircraft(Aircraft aircraft) {
+        this.aircraft = aircraft;
     }
 
     public Airport getDepartureAirport() {
