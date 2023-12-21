@@ -20,8 +20,8 @@ public class Aircraft {
     @JoinColumn(name = "airline_id")
     private Airline airline;
     private int numberOfPassengers;
-    @OneToOne
-    private Flight flight;
+    @OneToMany(mappedBy = "aircraft")
+    private List<Flight> flightList;
     @ManyToMany
     private List<Gate> gateList;
     @ManyToMany
@@ -67,12 +67,12 @@ public class Aircraft {
         this.numberOfPassengers = numberOfPassengers;
     }
 
-    public Flight getFlight() {
-        return flight;
+    public List<Flight> getFlightList() {
+        return flightList;
     }
 
-    public void setFlight(Flight flight) {
-        this.flight = flight;
+    public void setFlightList(List<Flight> flightList) {
+        this.flightList = flightList;
     }
 
     public List<Gate> getGateList() {

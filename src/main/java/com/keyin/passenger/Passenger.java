@@ -15,8 +15,8 @@ public class Passenger {
     private String firstName;
     private String lastName;
     private String phoneNumber;
-
-    @OneToOne
+    @ManyToOne
+    @JoinColumn(name = "city_id")
     private City city;
     @ManyToMany
     private List<Aircraft> aircraft;
